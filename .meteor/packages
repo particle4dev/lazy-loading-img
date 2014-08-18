@@ -5,5 +5,5 @@
 
 autopublish
 insecure
-preserve-inputs
 jquery
+standard-app-packages
