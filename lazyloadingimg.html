@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Lazy Loading IMG</title>
+    <meta name="description" content="Lazy Loading IMG">
+    <meta name="author" content="Particle4Dev">
+
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container" style="width: 90%; height: 98%; overflow: auto; margin: 0 auto;background-color: #FFF8DC;border: 1px solid #E0DCBF;">
+        <div style="width: 100%; height: auto;">            
+            
+            <div class="boxEffects artwork" style="height: 1680px; width: 1260px; float: left;">
+                <div class="container artwork__Container g-transform-3d g-transform-origin__right">
+                    <div class="tile artwork__flipFace g-backface-visibility" style="background: white;">
+                        <img src="loading.gif"/>
+                    </div>
+                    <div class="tile artwork__flipBack g-backface-visibility">
+                        <img height="1680" width="1260" src="/blank.jpg" class="lazy" data-src="http://wallnen.com/wp-content/uploads/2013/05/Baby-HD-wallpaper.jpg"/>
+                    </div>
+                </div>
+            </div>
+            <div class="boxEffects artwork" style="height: 1280px; width: 1024px; float: left;">
+                <div class="container artwork__Container g-transform-3d g-transform-origin__right">
+                    <div class="tile artwork__flipFace g-backface-visibility" style="background: white;">
+                        <img src="loading.gif"/>
+                    </div>
+                    <div class="tile artwork__flipBack g-backface-visibility">
+                        <img height="1280" width="1024" src="/blank.jpg" class="lazy" data-src="http://tipsforlifestyle.files.wordpress.com/2012/10/baby-girl.jpg"/>
+                    </div>
+                </div>
+            </div>
+            <div class="boxEffects artwork" style="height: 346px; width: 616px; float: left;">
+                <div class="container artwork__Container g-transform-3d g-transform-origin__right">
+                    <div class="tile artwork__flipFace g-backface-visibility" style="background: white;">
+                        <img src="loading.gif"/>
+                    </div>
+                    <div class="tile artwork__flipBack g-backface-visibility">
+                        <img height="346" width="616" src="/blank.jpg" class="lazy" data-src="http://www.hallmark.com/hallmark-resources/explore/images/ideas/baby-picture-tips-med.jpg"/>
+                    </div>
+                </div>
+            </div>
+            <div class="boxEffects artwork" style="height: 486px; width: 810px; float: left;">
+                <div class="container artwork__Container g-transform-3d g-transform-origin__right">
+                    <div class="tile artwork__flipFace g-backface-visibility" style="background: white;">
+                        <img src="loading.gif"/>
+                    </div>
+                    <div class="tile artwork__flipBack g-backface-visibility">
+                        <img height="486" width="810" src="/blank.jpg" class="lazy" data-src="http://www.sciencealert.com.au/images/stories/magann_BlueSky_iStock.jpg"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('img.lazy').lazyLoadingImg({container: '.container'});
+    });
+    </script>
+</body>
+</html>
